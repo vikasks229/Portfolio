@@ -4,6 +4,7 @@
     background-color: black;
     color: white;
     scroll-behavior: smooth;
+    /* box-sizing: border-box; */
 }
 #div1 {
     height: 40px;
@@ -23,6 +24,9 @@
     font-size: 30px;
     color: #4C5270;
     animation: name 1s linear 1ms 1 normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav {
     display: inline-block;
@@ -542,7 +546,7 @@ ul{
     display: inline-block;
     
     position: relative;
-    bottom: 78px;
+    bottom: 90px;
     h1{
         background-color: rgb(23, 23, 23);
         display: inline-block;
@@ -562,7 +566,7 @@ ul{
 }
 #combi5{
     background-color: rgb(23, 23, 23);
-    margin-top: 130px;
+    margin-top: 110px;
     font-size: 40px;
     a{
         background-color: rgb(157, 0, 255);
@@ -597,4 +601,79 @@ ul{
     display: inline-block;
 }
 
-/*-----------------------------------------------------------------------------------*/
+/*--------------------------------------------------TicTacToe-project-6-----------------------------------------------------*/
+
+#TicTacToe-project-6 {
+    height: 400px;
+    width: 1140px;
+    background-color: rgb(23, 23, 23);
+    margin-top: 25px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    
+    
+}
+#project6_inside_section1 {
+    background-color: rgb(23, 23, 23);
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    
+    
+    position: relative;
+    bottom: 60px;
+    h1{
+        background-color: rgb(23, 23, 23);
+        display: inline-block;
+    }
+    pre{
+        font-size: medium;
+        background-color: rgb(23, 23, 23);
+        width: 500px;
+        margin-top: 10px;
+    }
+    p{
+        font-size: 20px;
+        width: 500px;
+        background-color: rgb(23, 23, 23);
+        margin-top: 10px;
+    }
+}
+#combi6{
+    background-color: rgb(23, 23, 23);
+    margin-top: 110px;
+    font-size: 40px;
+    a{
+        background-color: rgb(157, 0, 255);
+        text-decoration: none;
+        font-size: 100%;
+        border-radius: 5px;
+        display: inline-block;
+        
+    }
+}
+#demo6{
+    display: inline-block;
+}
+#git6{
+    display: inline-block;
+}
+
+#project6_inside_section2{
+    height: 380px;
+    width: 535px;
+    border: solid 2px black;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+
+#project6_inside_section2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: auto;
+    display: inline-block;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
