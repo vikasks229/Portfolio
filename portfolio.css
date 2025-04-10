@@ -6,6 +6,9 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+body {
+    width: 100%;
+}
 #div1 {
     height: 40px;
     width: 100%;
@@ -48,8 +51,7 @@ nav {
     padding-right: 20px;
     font-size: 1.1rem;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(224, 224, 224);
-    
+    color: rgb(224, 224, 224);    
 }
 #home_nav a{
     text-decoration: none;
@@ -99,7 +101,7 @@ nav {
     display: inline-block;
 }
 
-/* ----------------------------------main-section--------------------------------------------- */
+/* ----------------------------------body-section--------------------------------------------- */
 
 h6{
     display: inline-block;
@@ -686,4 +688,58 @@ ul{
     display: inline-block;
 }
 
-/* -------------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------Media-queries--------------------------------------------------------------------- */
+@media (max-width: 1187px) {
+    #hero_name {
+      /* flex-direction: row; */
+      /* align-items:flex-start; */
+      margin-left: 5%;
+      display: block;
+      display: flex;
+
+      h2{
+        font-size: 1.2rem;
+      }
+      h1{
+        font-size: 2.0rem;
+        padding: 0px;
+
+      }
+    }
+  
+    #dp img{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+  
+    #DivH2H1andP {
+      width: 100%;
+      display: inline-block;
+    }
+    #dp {
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+        
+        flex-direction: row-reverse;
+        display: inline-block;
+
+    }
+    #links {
+        margin-left: 3%;
+        
+    }
+    #home_nav a{
+    
+        width: 100%;
+        font-size: 60%;
+        margin-right: 5px;
+        position: relative;
+        left: 100px;
+        
+    }
+    
+    
+  }
+  
