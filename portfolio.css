@@ -4,7 +4,7 @@
     background-color: black;
     color: white;
     scroll-behavior: smooth;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 #div1 {
     height: 40px;
@@ -42,19 +42,18 @@ nav {
     font-size: 50px;
 }
 #home_nav {
-    margin-left: 105px;
     display: inline-block;
-    width: 550px;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 20px;
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+    font-size: 1.5rem;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(224, 224, 224);
-    padding-left: 700px;
     
 }
 #home_nav a{
     text-decoration: none;
+    padding-right: 30px;
 }
 #hero_name {
     display: inline-block;
@@ -211,26 +210,25 @@ ul{
 }
 
 /*---------------------------------Project2----------------------------------------------- */
-
 #project2 {
     height: 400px;
-    width: 1100px;
+    width: 1140px;
     background-color: rgb(23, 23, 23);
-    display: inline-block;
     margin-top: 25px;
-    padding-top: 10px;
     padding-left: 40px;
+    box-sizing: border-box;
+    
     
 }
-#project2_inside_section1{
-    height: 390px;
-    width: 500px;
-    display: inline-block;
+#project2_inside_section1 {
     background-color: rgb(23, 23, 23);
-
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    
+    
     position: relative;
-    bottom: 78px;
-
+    bottom: 60px;
     h1{
         background-color: rgb(23, 23, 23);
         display: inline-block;
@@ -244,13 +242,13 @@ ul{
     p{
         font-size: 20px;
         width: 500px;
-        background-color: rgba(23, 23, 23);
+        background-color: rgb(23, 23, 23);
         margin-top: 10px;
     }
 }
 #combi2{
     background-color: rgb(23, 23, 23);
-    margin-top: 130px;
+    margin-top: 110px;
     font-size: 40px;
     a{
         background-color: rgb(157, 0, 255);
@@ -267,14 +265,17 @@ ul{
 #git2{
     display: inline-block;
 }
-#project2_inside_section2{
-    height: 390px;
-    width: 535px;
-    display: inline-block;
-    margin-left: 30px;
-    border: 2px solid black;
 
+#project2_inside_section2{
+    height: 380px;
+    width: 535px;
+    border: solid 2px black;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 30px;
+    box-sizing: border-box;
 }
+
 #project2_inside_section2 img{
     height: 100%;
     width: 100%;
@@ -283,26 +284,25 @@ ul{
 }
 
 /* --------------------------------------project-3-css------------------------------------------- */
-
 #project3 {
     height: 400px;
-    width: 1100px;
+    width: 1140px;
     background-color: rgb(23, 23, 23);
-    display: inline-block;
     margin-top: 25px;
-    padding-top: 10px;
     padding-left: 40px;
+    box-sizing: border-box;
+    
     
 }
-#project3_inside_section1{
-    height: 390px;
-    width: 500px;
-    display: inline-block;
+#project3_inside_section1 {
     background-color: rgb(23, 23, 23);
-
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    
+    
     position: relative;
-    bottom: 58px;
-
+    bottom: 60px;
     h1{
         background-color: rgb(23, 23, 23);
         display: inline-block;
@@ -316,13 +316,13 @@ ul{
     p{
         font-size: 20px;
         width: 500px;
-        background-color: rgba(23, 23, 23);
+        background-color: rgb(23, 23, 23);
         margin-top: 10px;
     }
 }
 #combi3{
     background-color: rgb(23, 23, 23);
-    margin-top: 130px;
+    margin-top: 110px;
     font-size: 40px;
     a{
         background-color: rgb(157, 0, 255);
@@ -339,14 +339,17 @@ ul{
 #git3{
     display: inline-block;
 }
-#project3_inside_section2{
-    height: 390px;
-    width: 535px;
-    display: inline-block;
-    margin-left: 30px;
-    border: 2px solid black;
 
+#project3_inside_section2{
+    height: 380px;
+    width: 535px;
+    border: solid 2px black;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 30px;
+    box-sizing: border-box;
 }
+
 #project3_inside_section2 img{
     height: 100%;
     width: 100%;
