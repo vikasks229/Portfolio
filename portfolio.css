@@ -687,54 +687,107 @@ ul{
     display: inline-block;
 }
 
+/* 3D card effect for all project containers */
+
+#project1, #project2, #project3, #rock-paper-game-project4, #currency-converter-project-5, #TicTacToe-project-6 {
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+}
+#project1.show-on-scroll,
+#project2.show-on-scroll,
+#project3.show-on-scroll,
+#rock-paper-game-project4.show-on-scroll,
+#currency-converter-project-5.show-on-scroll,
+#TicTacToe-project-6.show-on-scroll {
+    animation: slideInFromLeft 1s ease forwards;
+}
+
+#project1:hover,
+#project2:hover,
+#project3:hover,
+#rock-paper-game-project4:hover,
+#currency-converter-project-5:hover,
+#TicTacToe-project-6:hover {
+    transform: rotateY(5deg) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
+}
+
+/* Floating image effect inside the card */
+#project1_inside_section2 img,
+#project2_inside_section2 img,
+#project3_inside_section2 img,
+#project4_inside_section2 img,
+#project5_inside_section2 img,
+#project6_inside_section2 img {
+    transition: transform 0.5s ease;
+}
+#project1:hover img,
+#project2:hover img,
+#project3:hover img,
+#rock-paper-game-project4:hover img,
+#currency-converter-project-5:hover img,
+#TicTacToe-project-6:hover img {
+    transform: scale(1.05) rotateY(3deg);
+}
+
+/* Animation keyframes for slide + fade */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px) rotateY(-10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) rotateY(0deg);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px) rotateY(10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) rotateY(0deg);
+    }
+}
+
+/* Apply alternating animation */
+#project1, #project3, #currency-converter-project-5 {
+    animation: slideInFromLeft 1s ease forwards;
+    opacity: 0;
+}
+#project2, #rock-paper-game-project4, #TicTacToe-project-6 {
+    animation: slideInFromRight 1s ease forwards;
+    opacity: 0;
+}
+
+#skills, #education {
+    opacity: 0;
+    transform: translateY(50px); /* Slide up look */
+}
+
+#skills.show-on-scroll,
+#education.show-on-scroll {
+    animation: fadeSlideUp 1s ease forwards;
+}
+
+/* Optional: Custom animation */
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 /* -----------------------------------------------------Media-queries--------------------------------------------------------------------- */
-/* @media (max-width: 1187px) {
-    #hero_name {
-      margin-left: 5%;
-      display: block;
-      display: flex;
-
-      h2{
-        font-size: 1.2rem;
-      }
-      h1{
-        font-size: 2.0rem;
-        padding: 0px;
-
-      }
-    }
-  
-    #dp img{
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-    }
-  
-    #DivH2H1andP {
-      width: 100%;
-      display: inline-block;
-    }
-    #dp {
-        width: 100%;
-        height: 100%;
-        margin-left: 0px;
-        
-        flex-direction: row-reverse;
-        display: inline-block;
-
-    }
-    #links {
-        margin-left: 3%;
-        
-    }
-    #home_nav a{
-    
-        width: 100%;
-        font-size: 60%;
-        margin-right: 5px;
-        position: relative;
-        left: 100px;
-        
-    }
-} */
+/* will be added soon */
 /* -------------------------------------media-ended----------------------------------------------- */
